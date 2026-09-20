@@ -13,7 +13,8 @@ for (const {data, file} of packages) {
     if (!Number.isInteger(question.answerIndex) || question.answerIndex < 0 || question.answerIndex >= question.choices.length) throw new Error(`${file}: invalid answer index in ${question.id}.`);
     positions.push(question.answerIndex);
   }
-  const max = Math.max(...Object.values(Object.groupBy(positions, String)).map((group) => group.length));
+  const counts = positions.reduce((result, position) => ({ ...result, [position]: (result[position] ?? 0) + 1 }), {});
+  const max = Math.max(...Object.values(counts));
   if (max > Math.ceil(positions.length / 2)) throw new Error(`${file}: answer positions are too concentrated.`);
 }
 console.log(`Validated Hasan package structure and answer distribution for ${packages.length} packages.`);

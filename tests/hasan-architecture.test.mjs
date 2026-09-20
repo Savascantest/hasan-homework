@@ -17,6 +17,6 @@ test('7. package dates are the verified lesson dates', () => assert.deepEqual(ra
 test('8. each package has unique question IDs', () => raw.forEach((p) => assert.equal(new Set(p.quiz.map((q) => q.id)).size, p.quiz.length)));
 test('9. each package has unique prompts', () => raw.forEach((p) => assert.equal(new Set(p.quiz.map((q) => q.prompt)).size, p.quiz.length)));
 test('10. answer indexes are valid', () => raw.forEach((p) => p.quiz.forEach((q) => assert.ok(q.answerIndex >= 0 && q.answerIndex < q.choices.length))));
-test('11. answer positions are distributed', () => raw.forEach((p) => assert.ok(Math.max(...Object.values(Object.groupBy(p.quiz.map((q) => q.answerIndex), String)).map((group) => group.length)) <= 3)));
+test('11. answer positions are distributed', () => raw.forEach((p) => { const counts = p.quiz.map((q) => q.answerIndex).reduce((result, position) => ({...result, [position]:(result[position] ?? 0) + 1}), {}); assert.ok(Math.max(...Object.values(counts)) <= 3); }));
 test('12. BrowserProgress stays package-scoped and local', async () => assert.match(await readFile('public/app.js','utf8'), /hasan-homework:\$\{pkg.id\}/));
 test('13. private dossier is ignored', async () => assert.match(await readFile('.gitignore','utf8'), /\/work\/private\//));
