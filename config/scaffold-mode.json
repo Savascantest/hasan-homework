@@ -1,0 +1,9 @@
+{
+  "mode": "new-student-onboarding",
+  "demoPackageIncluded": false,
+  "policyVersion": "hasan-lesson-evidence-first@1",
+  "templateContractVersion": "hasan-professional-flexible-workspace@1",
+  "activationStatus": "PLATFORM_DEPLOYED_PENDING_ROUTING_ACTIVATION",
+  "sharedQualityBaselineVersion": "architecture-v1-quality-baseline@1",
+  "routingEnabled": false
+}

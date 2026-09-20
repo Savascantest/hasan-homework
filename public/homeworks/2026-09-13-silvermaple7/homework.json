@@ -1,0 +1,61 @@
+{
+  "id": "2026-09-13-silvermaple7",
+  "date": "2026-09-13",
+  "title": "Meeting people: introductions and be",
+  "policyVersion": "hasan-lesson-evidence-first@1",
+  "templateContractVersion": "hasan-professional-flexible-workspace@1",
+  "template": "hasan-workspace",
+  "lessonNotes": [
+    "Introduce yourself and keep a conversation moving with a follow-up question.",
+    "Use am / is / are for identity, location, feelings and jobs.",
+    "Read phone numbers clearly, one digit at a time; double is also useful for repeated digits."
+  ],
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Useful language",
+      "type": "cards",
+      "items": [
+        ["Nice to meet you.", "A friendly phrase when you meet someone."],
+        ["Where are you from?", "Ask about a person's home country or city."],
+        ["What do you like doing?", "Ask about hobbies and interests."],
+        ["contact number", "A phone number you can use to contact someone."],
+        ["nationality", "For example: Turkish, Chinese, American."],
+        ["single / married", "Words for relationship status."]
+      ]
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar focus: be",
+      "type": "note",
+      "body": "Use am / is / are with a state or description: I am in Istanbul. She is a model. They are happy. Use do not put an action verb directly after be here: I live in Istanbul is different from I am in Istanbul."
+    },
+    {
+      "id": "reading",
+      "label": "Read and notice",
+      "type": "reading",
+      "body": "Hi, I'm Deniz. Nice to meet you. I'm from Ankara, but I'm in Berlin today. I'm a designer and I like reading and coffee. What do you like doing?",
+      "prompt": "Underline the greeting, one location sentence, and one follow-up question."
+    },
+    {
+      "id": "speaking",
+      "label": "Speaking practice",
+      "type": "speaking",
+      "prompt": "Say a short introduction: your name, where you are from, one hobby, and one question for the other person. Then practise a phone number slowly and clearly."
+    },
+    {
+      "id": "writing",
+      "label": "Writing practice",
+      "type": "writing",
+      "prompt": "Write 4–5 lines for a first meeting. Include a greeting, two facts about you, and one follow-up question."
+    }
+  ],
+  "quiz": [
+    { "id": "sep13-q1", "prompt": "Choose the natural answer: Where are you from?", "choices": ["I'm from Turkey.", "I'm fine, thanks.", "Nice to meet you.", "I am single."], "answerIndex": 0, "explanation": "Use from + place to give your origin." },
+    { "id": "sep13-q2", "prompt": "Choose the correct sentence for a location now.", "choices": ["I live Istanbul.", "I am in Istanbul.", "I am live in Istanbul.", "I in Istanbul."], "answerIndex": 1, "explanation": "I am in + place describes where you are." },
+    { "id": "sep13-q3", "prompt": "Which is a good follow-up after “I like reading”?", "choices": ["Are you married?", "What is your number?", "What do you like reading?", "Where is reading?"], "answerIndex": 2, "explanation": "Ask about the detail the person just mentioned." },
+    { "id": "sep13-q4", "prompt": "Choose the correct form.", "choices": ["She are a police officer.", "She be a police officer.", "She is police officer.", "She is a police officer."], "answerIndex": 3, "explanation": "Use she is + a/an + job." },
+    { "id": "sep13-q5", "prompt": "Which phrase asks about hobbies?", "choices": ["What do you like doing?", "Where do you living?", "How are your hobby?", "What you like do?"], "answerIndex": 0, "explanation": "What do you like doing? is the complete question." },
+    { "id": "sep13-q6", "prompt": "Choose the correct negative form.", "choices": ["They not are married.", "They are not married.", "They do not married.", "They aren't marry."], "answerIndex": 1, "explanation": "Put not after are." }
+  ]
+}

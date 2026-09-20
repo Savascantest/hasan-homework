@@ -1,0 +1,16 @@
+{
+  "name": "student-homework-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "validate:privacy": "node scripts/validate-public-package-privacy.mjs",
+    "validate:packages": "node scripts/validate-homeworks.mjs && node scripts/validate-hasan-packages.mjs",
+    "validate:dossier": "node work/private/architecture-v1/validate-dossier.mjs",
+    "validate": "npm run validate:privacy && npm run validate:packages && npm run validate:dossier",
+    "homeworks:index": "node scripts/build-homework-index.mjs",
+    "build": "node scripts/build.mjs",
+    "readiness": "npm run validate && npm run homeworks:index && npm test && npm run build"
+  }
+}

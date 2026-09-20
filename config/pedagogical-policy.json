@@ -1,0 +1,9 @@
+{
+  "policyId": "hasan-lesson-evidence-first",
+  "version": 1,
+  "sharedQualityBaselineVersion": "architecture-v1-quality-baseline@1",
+  "languageRules": { "learnerFacingDefault": "English", "conciseTurkishSupport": "when genuinely useful" },
+  "teacherOverrideRules": { "priority": 1, "doNotAddHomeworkIsSuccessful": true },
+  "assessment": { "policyId": "hasan-formative-feedback", "retry": true, "reset": true, "masteryPromotion": false },
+  "templateContract": { "templateId": "hasan-professional-flexible-workspace", "version": 1, "requiredSections": [], "supportedSections": ["lesson-notes", "grammar", "vocabulary", "practice", "reading", "listening", "speaking", "writing", "review"] }
+}

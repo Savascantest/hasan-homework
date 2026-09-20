@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { listHomeworkFiles } from '../scripts/lib/homework-files.mjs';
+import { collectEnvelopeErrors } from '../scripts/lib/package-contract.mjs';
+import { collectPublicPackagePrivacyViolations } from '../scripts/lib/public-package-privacy.mjs';
+
+const packages = await listHomeworkFiles();
+const raw = packages.map(({data}) => data);
+test('1. exactly two genuine packages are present', () => assert.equal(raw.length, 2));
+test('2. packages are newest-first when archived', () => assert.deepEqual(raw.map((p) => p.date).sort().reverse(), ['2026-09-15','2026-09-13']));
+test('3. package IDs are opaque-safe dated IDs', () => raw.forEach((p) => assert.match(p.id, /^\d{4}-\d{2}-\d{2}-[a-z0-9]{10,24}$/)));
+test('4. package envelopes are complete', () => raw.forEach((p) => assert.deepEqual(collectEnvelopeErrors(p), [])));
+test('5. public packages contain no private source material', () => raw.forEach((p) => assert.deepEqual(collectPublicPackagePrivacyViolations(p), [])));
+test('6. no synthetic package is listed', () => raw.forEach((p) => assert.ok(!JSON.stringify(p).toLowerCase().includes('synthetic'))));
+test('7. package dates are the verified lesson dates', () => assert.deepEqual(raw.map((p) => p.date).sort(), ['2026-09-13','2026-09-15']));
+test('8. each package has unique question IDs', () => raw.forEach((p) => assert.equal(new Set(p.quiz.map((q) => q.id)).size, p.quiz.length)));
+test('9. each package has unique prompts', () => raw.forEach((p) => assert.equal(new Set(p.quiz.map((q) => q.prompt)).size, p.quiz.length)));
+test('10. answer indexes are valid', () => raw.forEach((p) => p.quiz.forEach((q) => assert.ok(q.answerIndex >= 0 && q.answerIndex < q.choices.length))));
+test('11. answer positions are distributed', () => raw.forEach((p) => assert.ok(Math.max(...Object.values(Object.groupBy(p.quiz.map((q) => q.answerIndex), String)).map((group) => group.length)) <= 3)));
+test('12. BrowserProgress stays package-scoped and local', async () => assert.match(await readFile('public/app.js','utf8'), /hasan-homework:\$\{pkg.id\}/));
+test('13. private dossier is ignored', async () => assert.match(await readFile('.gitignore','utf8'), /\/work\/private\//));

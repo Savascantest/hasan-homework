@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "id": "2026-09-15-amberlighthouse",
+      "date": "2026-09-15",
+      "title": "Describing people: personality words",
+      "path": "2026-09-15-amberlighthouse/homework.json",
+      "policyVersion": "hasan-lesson-evidence-first@1",
+      "templateContractVersion": "hasan-professional-flexible-workspace@1"
+    },
+    {
+      "id": "2026-09-13-silvermaple7",
+      "date": "2026-09-13",
+      "title": "Meeting people: introductions and be",
+      "path": "2026-09-13-silvermaple7/homework.json",
+      "policyVersion": "hasan-lesson-evidence-first@1",
+      "templateContractVersion": "hasan-professional-flexible-workspace@1"
+    }
+  ]
+}

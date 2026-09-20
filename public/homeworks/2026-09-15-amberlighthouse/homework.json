@@ -1,0 +1,61 @@
+{
+  "id": "2026-09-15-amberlighthouse",
+  "date": "2026-09-15",
+  "title": "Describing people: personality words",
+  "policyVersion": "hasan-lesson-evidence-first@1",
+  "templateContractVersion": "hasan-professional-flexible-workspace@1",
+  "template": "hasan-workspace",
+  "lessonNotes": [
+    "Use personality adjectives to describe yourself and other people.",
+    "Keep the difference clear: funny describes a person; fun describes an activity or experience.",
+    "Use evidence in a short description: kind people help others; a hardworking person works a lot."
+  ],
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Personality vocabulary",
+      "type": "cards",
+      "items": [
+        ["friendly", "kind and easy to talk to"],
+        ["kind / polite", "kind = caring; polite = respectful and well-mannered"],
+        ["hardworking / lazy", "opposites about work and effort"],
+        ["creative", "having lots of new ideas"],
+        ["shy", "nervous about talking to new people"],
+        ["serious / funny", "serious = not joking much; funny = makes people laugh"]
+      ]
+    },
+    {
+      "id": "grammar",
+      "label": "Meaning in context",
+      "type": "note",
+      "body": "Use be + adjective to describe a person: He is friendly. She is creative. Be careful with fun and funny: The film is fun; my friend is funny."
+    },
+    {
+      "id": "listening",
+      "label": "Listen and identify",
+      "type": "listening",
+      "body": "Use the play button to hear four short, original descriptions. Listen for the personality words, then choose the matching answer below.",
+      "lines": ["Maya has many friends and talks easily to new people.", "Arda works carefully every day and finishes his tasks.", "Lena has unusual ideas for every project.", "Omar is quiet when he meets new people."]
+    },
+    {
+      "id": "speaking",
+      "label": "Speaking practice",
+      "type": "speaking",
+      "prompt": "Describe a friend in three sentences. Use one positive adjective, one example, and one contrast with but. Example: My friend is creative, but he is a little shy."
+    },
+    {
+      "id": "writing",
+      "label": "Writing practice",
+      "type": "writing",
+      "prompt": "Write a short profile of an imaginary classmate. Use 4 personality adjectives and explain one adjective with an example."
+    }
+  ],
+  "quiz": [
+    { "id": "sep15-q1", "prompt": "Which word describes a person who has many new ideas?", "choices": ["creative", "rude", "shy", "lazy"], "answerIndex": 0, "explanation": "Creative people have new or original ideas." },
+    { "id": "sep15-q2", "prompt": "Choose the best sentence.", "choices": ["My friend is fun. He tells great jokes.", "My friend is funny. He tells great jokes.", "My friend is funny. The party is funny.", "My friend is funnily. He tells jokes."], "answerIndex": 1, "explanation": "Funny describes someone who makes people laugh." },
+    { "id": "sep15-q3", "prompt": "Someone who is kind usually…", "choices": ["avoids everyone", "has no ideas", "helps other people", "never works"], "answerIndex": 2, "explanation": "Kind people care about and help others." },
+    { "id": "sep15-q4", "prompt": "Choose the opposite pair.", "choices": ["polite — kind", "creative — intelligent", "shy — serious", "hardworking — lazy"], "answerIndex": 3, "explanation": "Hardworking and lazy have opposite meanings." },
+    { "id": "sep15-q5", "prompt": "Choose the correct description.", "choices": ["She is a shy person.", "She shy person.", "She is shyly person.", "She is a shyness person."], "answerIndex": 0, "explanation": "Use be + a + adjective + person." },
+    { "id": "sep15-q6", "prompt": "Which word means respectful and well-mannered?", "choices": ["careful", "polite", "silly", "strange"], "answerIndex": 1, "explanation": "Polite means respectful in the way you speak and act." }
+  ]
+}
