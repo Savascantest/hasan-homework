@@ -5,57 +5,47 @@
   "policyVersion": "hasan-lesson-evidence-first@1",
   "templateContractVersion": "hasan-professional-flexible-workspace@1",
   "template": "hasan-workspace",
-  "lessonNotes": [
-    "Introduce yourself and keep a conversation moving with a follow-up question.",
-    "Use am / is / are for identity, location, feelings and jobs.",
-    "Read phone numbers clearly, one digit at a time; double is also useful for repeated digits."
-  ],
+  "lessonNotes": ["Introduce yourself and keep a conversation moving with a follow-up question.", "Use am / is / are for identity, location, feelings and jobs.", "Read phone numbers clearly, one digit at a time; double is also useful for repeated digits."],
   "sections": [
-    {
-      "id": "vocabulary",
-      "label": "Useful language",
-      "type": "cards",
-      "items": [
-        ["Nice to meet you.", "A friendly phrase when you meet someone."],
-        ["Where are you from?", "Ask about a person's home country or city."],
-        ["What do you like doing?", "Ask about hobbies and interests."],
-        ["contact number", "A phone number you can use to contact someone."],
-        ["nationality", "For example: Turkish, Chinese, American."],
-        ["single / married", "Words for relationship status."]
-      ]
-    },
-    {
-      "id": "grammar",
-      "label": "Grammar focus: be",
-      "type": "note",
-      "body": "Use am / is / are with a state or description: I am in Istanbul. She is a model. They are happy. Use do not put an action verb directly after be here: I live in Istanbul is different from I am in Istanbul."
-    },
-    {
-      "id": "reading",
-      "label": "Read and notice",
-      "type": "reading",
-      "body": "Hi, I'm Deniz. Nice to meet you. I'm from Ankara, but I'm in Berlin today. I'm a designer and I like reading and coffee. What do you like doing?",
-      "prompt": "Underline the greeting, one location sentence, and one follow-up question."
-    },
-    {
-      "id": "speaking",
-      "label": "Speaking practice",
-      "type": "speaking",
-      "prompt": "Say a short introduction: your name, where you are from, one hobby, and one question for the other person. Then practise a phone number slowly and clearly."
-    },
-    {
-      "id": "writing",
-      "label": "Writing practice",
-      "type": "writing",
-      "prompt": "Write 4–5 lines for a first meeting. Include a greeting, two facts about you, and one follow-up question."
-    }
+    {"id":"grammar-explanation","label":"Grammar: am / is / are","type":"grammar","intro":"Use the verb be to say who someone is, where they are, or how they feel. The form changes with the subject.","rules":[
+      {"label":"Positive","body":"I am (I'm); you / we / they are; he / she / it is.","examples":["I'm from Turkey.","She is a designer.","They are in Berlin."]},
+      {"label":"Negative","body":"Put not after be: am not, is not (isn't), are not (aren't).","examples":["I'm not a teacher.","He isn't from Ankara.","We aren't late."]},
+      {"label":"Questions","body":"Put am / is / are before the subject. Answer with a short form when possible.","examples":["Are you from Istanbul? — Yes, I am.","Is she married? — No, she isn't.","Where are they from?"]}
+    ]},
+    {"id":"grammar-practice","label":"Grammar exercises","type":"practice","intro":"Choose an answer. You can try again if you need to.","questions":[
+      {"id":"sep13-g1","prompt":"Complete the sentence: I ___ from Izmir.","choices":["am","is","are"],"answerIndex":0,"explanation":"Use am with I."},
+      {"id":"sep13-g2","prompt":"Choose the correct question.","choices":["You are from Turkey?","Are you from Turkey?","Do you are from Turkey?"],"answerIndex":1,"explanation":"Put are before you in a be question."},
+      {"id":"sep13-g3","prompt":"Complete: She ___ not married.","choices":["am","is","are"],"answerIndex":1,"explanation":"Use is with she: She is not married."}
+    ]},
+    {"id":"vocabulary","label":"Vocabulary flashcards","type":"cards","intro":"Select a card to turn it over. Read the English meaning, Turkish translation and example.","items":[
+      {"term":"Nice to meet you.","translation":"Tanıştığıma memnun oldum.","explanation":"A friendly phrase when you meet someone for the first time.","example":"Hi, I'm Elif. Nice to meet you."},
+      {"term":"Where are you from?","translation":"Nerelisin?","explanation":"Use it to ask about a person's home country or city.","example":"Where are you from? — I'm from Bursa."},
+      {"term":"What do you like doing?","translation":"Ne yapmayı seviyorsun?","explanation":"A question about hobbies and interests.","example":"What do you like doing? — I like reading."},
+      {"term":"contact number","translation":"iletişim numarası","explanation":"A phone number someone can use to contact you.","example":"My contact number is 0555 123 45 67."},
+      {"term":"nationality","translation":"milliyet / uyruk","explanation":"The country group a person belongs to, for example Turkish or American.","example":"Her nationality is Turkish."},
+      {"term":"single / married","translation":"bekâr / evli","explanation":"Words that describe relationship status.","example":"He is single. They are married."}
+    ]},
+    {"id":"vocabulary-practice","label":"Vocabulary exercises","type":"practice","intro":"Use the meaning and examples from the flashcards.","questions":[
+      {"id":"sep13-v1","prompt":"Which phrase asks about hobbies?","choices":["What do you like doing?","Where are you from?","Are you married?"],"answerIndex":0,"explanation":"What do you like doing? asks about interests."},
+      {"id":"sep13-v2","prompt":"Choose the best reply: Nice to meet you.","choices":["Nice to meet you too.","I'm from a number.","I like nationality."],"answerIndex":0,"explanation":"Nice to meet you too is the natural polite reply."},
+      {"id":"sep13-v3","prompt":"What is a contact number?","choices":["A telephone number","A country","A hobby"],"answerIndex":0,"explanation":"It is a number people can use to call or message you."}
+    ]},
+    {"id":"external-listening","label":"Listening: meeting other students","type":"external-listening","sourceLabel":"British Council LearnEnglish — A1: Meeting other students","sourceUrl":"https://learnenglish.britishcouncil.org/free-resources/listening/a1/meeting-other-students?page=1","body":"Open the listening, do the preparation task, then listen once for the main idea and once for names, places and study subjects. Complete the British Council tasks there before answering the quick checks below.","questions":[
+      {"id":"sep13-l1","prompt":"In the listening, what phrase do the students use when they first meet?","choices":["Nice to meet you.","Good night.","See you yesterday."],"answerIndex":0,"explanation":"Listen for the introduction between the new students."},
+      {"id":"sep13-l2","prompt":"Which kind of information do the students share?","choices":["Where they are from","Their bank details","A recipe"],"answerIndex":0,"explanation":"The conversation includes questions about where people are from."}
+    ]},
+    {"id":"reading","label":"Reading: a first conversation","type":"reading","body":"Hi, I'm Deniz. Nice to meet you. I'm from Ankara, but I'm in Berlin today for a design course. I'm a designer and I like reading, coffee and city walks. My friend Ece is here too. She is from Izmir and she is very interested in art. We are not in the same class, but we are both happy to meet new people. What do you like doing?","prompt":"Read once for the general idea, then read again and answer the questions.","questions":[
+      {"id":"sep13-r1","prompt":"Where is Deniz today?","choices":["Berlin","Ankara","Izmir"],"answerIndex":0,"explanation":"Deniz says, 'I'm in Berlin today'."},
+      {"id":"sep13-r2","prompt":"What is Deniz's job?","choices":["Designer","Teacher","Police officer"],"answerIndex":0,"explanation":"The text says, 'I'm a designer'."},
+      {"id":"sep13-r3","prompt":"Are Deniz and Ece in the same class?","choices":["No, they aren't.","Yes, they are.","The text does not say."],"answerIndex":0,"explanation":"They are not in the same class."}
+    ]}
   ],
-  "quiz": [
-    { "id": "sep13-q1", "prompt": "Choose the natural answer: Where are you from?", "choices": ["I'm from Turkey.", "I'm fine, thanks.", "Nice to meet you.", "I am single."], "answerIndex": 0, "explanation": "Use from + place to give your origin." },
-    { "id": "sep13-q2", "prompt": "Choose the correct sentence for a location now.", "choices": ["I live Istanbul.", "I am in Istanbul.", "I am live in Istanbul.", "I in Istanbul."], "answerIndex": 1, "explanation": "I am in + place describes where you are." },
-    { "id": "sep13-q3", "prompt": "Which is a good follow-up after “I like reading”?", "choices": ["Are you married?", "What is your number?", "What do you like reading?", "Where is reading?"], "answerIndex": 2, "explanation": "Ask about the detail the person just mentioned." },
-    { "id": "sep13-q4", "prompt": "Choose the correct form.", "choices": ["She are a police officer.", "She be a police officer.", "She is police officer.", "She is a police officer."], "answerIndex": 3, "explanation": "Use she is + a/an + job." },
-    { "id": "sep13-q5", "prompt": "Which phrase asks about hobbies?", "choices": ["What do you like doing?", "Where do you living?", "How are your hobby?", "What you like do?"], "answerIndex": 0, "explanation": "What do you like doing? is the complete question." },
-    { "id": "sep13-q6", "prompt": "Choose the correct negative form.", "choices": ["They not are married.", "They are not married.", "They do not married.", "They aren't marry."], "answerIndex": 1, "explanation": "Put not after are." }
+  "quiz":[
+    {"id":"sep13-q1","prompt":"Choose the natural answer: Where are you from?","choices":["I'm from Turkey.","I'm fine, thanks.","Nice to meet you.","I am single."],"answerIndex":0,"explanation":"Use from + place to give your origin."},
+    {"id":"sep13-q2","prompt":"Choose the correct sentence for a location now.","choices":["I live Istanbul.","I am in Istanbul.","I am live in Istanbul.","I in Istanbul."],"answerIndex":1,"explanation":"I am in + place describes where you are."},
+    {"id":"sep13-q3","prompt":"Which is a good follow-up after ‘I like reading’?","choices":["Are you married?","What is your number?","What do you like reading?","Where is reading?"],"answerIndex":2,"explanation":"Ask about the detail the person just mentioned."},
+    {"id":"sep13-q4","prompt":"Choose the correct form.","choices":["She are a police officer.","She be a police officer.","She is police officer.","She is a police officer."],"answerIndex":3,"explanation":"Use she is + a/an + job."},
+    {"id":"sep13-q5","prompt":"Which phrase asks about hobbies?","choices":["What do you like doing?","Where do you living?","How are your hobby?","What you like do?"],"answerIndex":0,"explanation":"What do you like doing? is the complete question."},
+    {"id":"sep13-q6","prompt":"Choose the correct negative form.","choices":["They not are married.","They are not married.","They do not married.","They aren't marry."],"answerIndex":1,"explanation":"Put not after are."}
   ]
 }
