@@ -7,7 +7,7 @@
     "test": "node --test tests/*.test.mjs",
     "validate:privacy": "node scripts/validate-public-package-privacy.mjs",
     "validate:packages": "node scripts/validate-homeworks.mjs && node scripts/validate-hasan-packages.mjs",
-    "validate:dossier": "node work/private/architecture-v1/validate-dossier.mjs",
+    "validate:dossier": "node scripts/validate-private-dossier-if-present.mjs",
     "validate": "npm run validate:privacy && npm run validate:packages && npm run validate:dossier",
     "homeworks:index": "node scripts/build-homework-index.mjs",
     "build": "node scripts/build.mjs",
